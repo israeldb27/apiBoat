@@ -1,0 +1,83 @@
+{
+  "name": "Barco",
+  "plural": "Barcos",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nome": {
+      "type": "string",
+      "required": true
+    },
+    "cor": {
+      "type": "string"
+    },
+    "pes": {
+      "type": "number"
+    },
+    "tipoCasco": {
+      "type": "string"
+    },
+    "motor": {
+      "type": "string"
+    },
+    "capacidadePessoas": {
+      "type": "number"
+    },
+    "autonomia": {
+      "type": "number"
+    },
+    "comprimento": {
+      "type": "number"
+    },
+    "tipoCombustivel": {
+      "type": "string"
+    },
+    "capacidadeCombustivel": {
+      "type": "number"
+    },
+    "velocidade": {
+      "type": "number"
+    },
+    "quantidadeCabines": {
+      "type": "number"
+    },
+    "observacoes": {
+      "type": "string"
+    },
+    "descricao": {
+      "type": "string"
+    },
+    "dataCadastro": {
+      "type": "date"
+    },
+    "dataUtilmaAtualizacao": {
+      "type": "date"
+    },
+    "idDonoBarco": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "avaliacaobarcos": {
+      "type": "hasMany",
+      "model": "Avaliacaobarco",
+      "foreignKey": ""
+    },
+    "opcionais": {
+      "type": "hasMany",
+      "model": "Opcional",
+      "foreignKey": ""
+    },
+    "reservaBarcos": {
+      "type": "hasMany",
+      "model": "ReservaBarco",
+      "foreignKey": "barcoId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,44 @@
+{
+  "name": "PlanoReservabarco",
+  "plural": "planoreservabarcos",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "valorAluguel": {
+      "type": "number",
+      "required": true
+    },
+    "diaSemana": {
+      "type": "string"
+    },
+    "dataEspecifica": {
+      "type": "date"
+    },
+    "horaInicioDisponivel": {
+      "type": "date"
+    },
+    "horaFimDisponivel": {
+      "type": "date"
+    },
+    "quantidadeHorasDisponiveis": {
+      "type": "number"
+    },
+    "status": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "reservaBarcos": {
+      "type": "hasMany",
+      "model": "ReservaBarco",
+      "foreignKey": "planoreservabarcoId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

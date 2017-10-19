@@ -1,0 +1,12 @@
+{
+  "boatds": {
+    "host": "localhost",
+    "port": 3306,
+    "url": "",
+    "database": "boat",
+    "password": "admin",
+    "name": "boatds",
+    "user": "root",
+    "connector": "mysql"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Avaliacaobarco",
+  "plural": "Avaliacaobarcos",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "dataAvaliacao": {
+      "type": "date",
+      "required": true
+    },
+    "pontuacao": {
+      "type": "number",
+      "required": true
+    },
+    "idUsuarioSolicitante": {
+      "type": "number",
+      "required": true
+    },
+    "observacao": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "barco": {
+      "type": "belongsTo",
+      "model": "Barco",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

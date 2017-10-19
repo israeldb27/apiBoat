@@ -1,0 +1,37 @@
+{
+  "name": "ReservaBarco",
+  "plural": "ReservaBarcos",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "dataSolicitacao": {
+      "type": "date",
+      "required": true
+    },
+    "dataPagamento": {
+      "type": "date"
+    },
+    "dataCancelamento": {
+      "type": "date"
+    },
+    "dataUltimaAtualizacao": {
+      "type": "date",
+      "required": true
+    },
+    "statusReserva": {
+      "type": "string",
+      "required": true,
+      "default": "dataReservaBarco"
+    },
+    "dataReservaBarco": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

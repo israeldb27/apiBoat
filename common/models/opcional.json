@@ -1,0 +1,32 @@
+{
+  "name": "Opcional",
+  "plural": "Opcionais",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nome": {
+      "type": "string",
+      "required": true
+    },
+    "descricao": {
+      "type": "string"
+    },
+    "observacao": {
+      "type": "string"
+    },
+    "dataCadastro": {
+      "type": "date"
+    },
+    "dataUltimaAtualizacao": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

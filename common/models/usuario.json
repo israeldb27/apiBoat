@@ -1,0 +1,84 @@
+{
+  "name": "Usuario",
+  "plural": "Usuarios",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nome": {
+      "type": "string",
+      "required": true
+    },
+    "login": {
+      "type": "string",
+      "required": true
+    },
+    "password": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "status": {
+      "type": "string",
+      "required": true
+    },
+    "perfil": {
+      "type": "string",
+      "required": true
+    },
+    "cpf": {
+      "type": "number",
+      "required": true
+    },
+    "dataCadastro": {
+      "type": "date",
+      "required": true
+    },
+    "dataNascimento": {
+      "type": "date",
+      "required": true
+    },
+    "dataUltimaAtualizacao": {
+      "type": "date",
+      "required": true
+    },
+    "dataUltimoAcesso": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "avaliacaoUsuariosolicitantes": {
+      "type": "hasMany",
+      "model": "AvaliacaoUsuariosolicitante",
+      "foreignKey": "usuarioSolicitanteId"
+    },
+    "avaliacaoUsuariosolicitantes_fk2": {
+      "type": "hasMany",
+      "model": "AvaliacaoUsuariosolicitante",
+      "foreignKey": "donoBarcoId"
+    },
+    "avaliacaodonobarcos": {
+      "type": "hasMany",
+      "model": "Avaliacaodonobarco",
+      "foreignKey": "usuarioSolicitanteId"
+    },
+    "avaliacaodonobarcos_fk2": {
+      "type": "hasMany",
+      "model": "Avaliacaodonobarco",
+      "foreignKey": "donoBarcoId"
+    },
+    "reservaBarcos_fk2": {
+      "type": "hasMany",
+      "model": "ReservaBarco",
+      "foreignKey": "usuarioSolicitanteId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

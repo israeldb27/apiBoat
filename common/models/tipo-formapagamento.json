@@ -1,0 +1,35 @@
+{
+  "name": "TipoFormapagamento",
+  "plural": "tipoformapagamentos",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nomeTipo": {
+      "type": "string",
+      "required": true
+    },
+    "dataCadastro": {
+      "type": "date",
+      "required": true
+    },
+    "descricao": {
+      "type": "string"
+    },
+    "observacao": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "formagPagamentoUsuarios": {
+      "type": "hasMany",
+      "model": "FormagPagamentoUsuario",
+      "foreignKey": "tipoformapagamentoId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,26 @@
+{
+  "name": "AvaliacaoUsuariosolicitante",
+  "plural": "avaliacaousuariosolicitantes",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "dataAvaliacao": {
+      "type": "date",
+      "required": true
+    },
+    "pontuacao": {
+      "type": "number",
+      "required": true
+    },
+    "observacao": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

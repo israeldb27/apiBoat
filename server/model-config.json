@@ -1,0 +1,56 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "Barco": {
+    "dataSource": "boatds",
+    "public": true
+  },
+  "Avaliacaobarco": {
+    "dataSource": "boatds",
+    "public": true
+  },
+  "Opcional": {
+    "dataSource": "boatds",
+    "public": true
+  },
+  "Usuario": {
+    "dataSource": "boatds",
+    "public": true
+  },
+  "AvaliacaoUsuariosolicitante": {
+    "dataSource": "boatds",
+    "public": true
+  },
+  "Avaliacaodonobarco": {
+    "dataSource": "boatds",
+    "public": true
+  },
+  "ReservaBarco": {
+    "dataSource": "boatds",
+    "public": true
+  },
+  "PlanoReservabarco": {
+    "dataSource": "boatds",
+    "public": true
+  },
+  "TipoFormapagamento": {
+    "dataSource": "boatds",
+    "public": true
+  },
+  "FormagPagamentoUsuario": {
+    "dataSource": "boatds",
+    "public": false
+  }
+}
