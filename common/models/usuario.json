@@ -80,5 +80,30 @@
     }
   },
   "acls": [],
-  "methods": {}
+  "methods": {
+    "realizarLogin": {
+      "accepts": [
+        {
+          "arg": "login",
+          "type": "string",
+          "required": true,
+          "description": ""
+        },
+        {
+          "arg": "password",
+          "type": "string",
+          "required": true,
+          "description": ""
+        }
+      ],
+      "returns": [],
+      "description": "submit login",
+      "http": [
+        {
+          "path": "\realizarLogin",
+          "verb": "post"
+        }
+      ]
+    }
+  }
 }
