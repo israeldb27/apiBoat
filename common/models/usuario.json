@@ -32,7 +32,7 @@
       "required": true
     },
     "cpf": {
-      "type": "number",
+      "type": "string",
       "required": true
     },
     "dataCadastro": {
