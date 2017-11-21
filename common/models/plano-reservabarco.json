@@ -7,27 +7,34 @@
     "validateUpsert": true
   },
   "properties": {
-    "valorAluguel": {
-      "type": "number",
-      "required": true
-    },
-    "diaSemana": {
-      "type": "string"
-    },
-    "dataEspecifica": {
-      "type": "date"
-    },
-    "horaInicioDisponivel": {
-      "type": "number"
-    },
-    "horaFimDisponivel": {
-      "type": "number"
-    },
-    "quantidadeHorasDisponiveis": {
-      "type": "number"
-    },
     "status": {
       "type": "string",
+      "required": true
+    },
+    "dataInicio": {
+      "type": "date"
+    },
+    "dataFim": {
+      "type": "date"
+    },
+    "valorAluguelKm": {
+      "type": "number"
+    },
+    "quantMaxPessoas": {
+      "type": "number"
+    },
+    "distanciaMax": {
+      "type": "number"
+    },
+    "quantHorasDisponivel": {
+      "type": "number"
+    },
+    "opcaoPlano": {
+      "type": "string",
+      "required": true
+    },
+    "barcoId": {
+      "type": "number",
       "required": true
     }
   },

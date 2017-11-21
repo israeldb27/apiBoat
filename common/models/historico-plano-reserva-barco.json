@@ -1,0 +1,45 @@
+{
+  "name": "HistoricoPlanoReservaBarco",
+  "plural": "HistoricosPlanoReservaVarco",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+   "dataInicio": {
+  	"type": "date"
+   },
+   "dataFim": {
+	"type": "date"
+   },
+   "valorAluguelKm": {
+	"type": "number"
+   },
+   "quantMaxPessoas": {
+	"type": "number"
+   },
+   "distanciaMax": {
+	"type": "number"
+   },
+   "quantHorasDisponivel": {
+	"type": "number"
+   },
+   "opcaoPlano": {
+	"type": "string",
+	"required": true
+   },
+    "barcoId": {
+      "type": "number",
+      "required": true
+    },
+    "dataCadastro": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

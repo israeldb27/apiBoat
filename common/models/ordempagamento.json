@@ -1,0 +1,45 @@
+{
+  "name": "ordempagamento",
+  "plural": "ordenspagamentos",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "idBarco": {
+      "type": "number",
+      "required": true
+    },
+    "idPlanoReservaBarco": {
+      "type": "number",
+      "required": true
+    },
+    "idUsuarioSolicitante": {
+      "type": "number",
+      "required": true
+    },
+    "valorPagamento": {
+      "type": "number",
+      "required": true
+    },
+    "dataCriacao": {
+      "type": "date",
+      "required": true
+    },
+    "status": {
+      "type": "string",
+      "required": true
+    },
+    "dataPagamento": {
+      "type": "date"
+    },
+    "dataCancelamento": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

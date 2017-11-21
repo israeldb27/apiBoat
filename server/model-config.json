@@ -52,5 +52,13 @@
   "FormagPagamentoUsuario": {
     "dataSource": "boatds",
     "public": false
+  },
+  "ordempagamento": {
+    "dataSource": "boatds",
+    "public": true
+  },
+  "HistoricoPlanoReservaBarco": {
+    "dataSource": "boatds",
+    "public": true
   }
 }
