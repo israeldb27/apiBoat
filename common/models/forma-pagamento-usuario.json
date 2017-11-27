@@ -1,0 +1,33 @@
+{
+  "name": "FormaPagamentoUsuario",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "dataCadastro": {
+      "type": "date",
+      "required": true
+    },
+    "banco": {
+      "type": "string"
+    },
+    "numeroCartao": {
+      "type": "number"
+    },
+    "agencia": {
+      "type": "number"
+    },
+    "conta": {
+      "type": "number"
+    },
+    "status": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

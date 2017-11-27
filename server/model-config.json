@@ -49,9 +49,9 @@
     "dataSource": "boatds",
     "public": true
   },
-  "FormagPagamentoUsuario": {
+  "FormaPagamentoUsuario": {
     "dataSource": "boatds",
-    "public": false
+    "public": true
   },
   "ordempagamento": {
     "dataSource": "boatds",
