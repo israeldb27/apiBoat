@@ -24,6 +24,10 @@
     },
     "status": {
       "type": "string"
+    },
+    "usuarioId": {
+      "type": "number",
+      "required": true
     }
   },
   "validations": [],

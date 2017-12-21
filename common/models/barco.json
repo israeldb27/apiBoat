@@ -58,6 +58,13 @@
     },
     "idDonoBarco": {
       "type": "number"
+    },
+    "disponivel": {
+      "type": "string",
+      "required": true
+    },
+    "tipoBarco": {
+      "type": "string"
     }
   },
   "validations": [],

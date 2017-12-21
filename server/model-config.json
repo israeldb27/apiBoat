@@ -60,5 +60,13 @@
   "HistoricoPlanoReservaBarco": {
     "dataSource": "boatds",
     "public": true
+  },
+  "FormaPagamentoDonoBarco": {
+    "dataSource": "boatds",
+    "public": true
+  },
+  "TipoBarco": {
+    "dataSource": "boatds",
+    "public": true
   }
 }

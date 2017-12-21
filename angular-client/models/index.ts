@@ -11,5 +11,7 @@ export * from './TipoFormapagamento';
 export * from './FormaPagamentoUsuario';
 export * from './Ordempagamento';
 export * from './HistoricoPlanoReservaBarco';
+export * from './FormaPagamentoDonoBarco';
+export * from './TipoBarco';
 export * from './BaseModels';
 export * from './FireLoopRef';

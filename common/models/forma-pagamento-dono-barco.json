@@ -1,5 +1,6 @@
 {
-  "name": "FormagPagamentoUsuario",
+  "name": "FormaPagamentoDonoBarco",
+  "plural": "FormaPagamentosDonoBarco",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -11,19 +12,28 @@
       "required": true
     },
     "banco": {
-      "type": "string"
+      "type": "number",
+      "required": true
     },
     "numeroCartao": {
-      "type": "number"
+      "type": "number",
+      "required": true
     },
     "agencia": {
-      "type": "number"
+      "type": "number",
+      "required": true
     },
     "conta": {
-      "type": "number"
+      "type": "number",
+      "required": true
     },
     "status": {
-      "type": "string"
+      "type": "string",
+      "required": true
+    },
+    "idDonoBarco": {
+      "type": "number",
+      "required": true
     }
   },
   "validations": [],

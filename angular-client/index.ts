@@ -61,6 +61,8 @@ import { TipoFormapagamentoApi } from './services/custom/TipoFormapagamento';
 import { FormaPagamentoUsuarioApi } from './services/custom/FormaPagamentoUsuario';
 import { OrdempagamentoApi } from './services/custom/Ordempagamento';
 import { HistoricoPlanoReservaBarcoApi } from './services/custom/HistoricoPlanoReservaBarco';
+import { FormaPagamentoDonoBarcoApi } from './services/custom/FormaPagamentoDonoBarco';
+import { TipoBarcoApi } from './services/custom/TipoBarco';
 /**
 * @module SDKBrowserModule
 * @description
@@ -104,6 +106,8 @@ export class SDKBrowserModule {
         FormaPagamentoUsuarioApi,
         OrdempagamentoApi,
         HistoricoPlanoReservaBarcoApi,
+        FormaPagamentoDonoBarcoApi,
+        TipoBarcoApi,
         internalStorageProvider,
         { provide: SDKStorage, useClass: StorageBrowser },
         { provide: SocketDriver, useClass: SocketBrowser }
