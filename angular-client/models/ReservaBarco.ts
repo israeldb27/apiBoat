@@ -11,7 +11,7 @@ export interface ReservaBarcoInterface {
   "id"?: number;
   "barcoId"?: number;
   "usuarioSolicitanteId"?: number;
-  "planoreservabarcoId"?: number;
+  "planoReservabarcoId"?: number;
 }
 
 export class ReservaBarco implements ReservaBarcoInterface {
@@ -24,7 +24,7 @@ export class ReservaBarco implements ReservaBarcoInterface {
   "id": number;
   "barcoId": number;
   "usuarioSolicitanteId": number;
-  "planoreservabarcoId": number;
+  "planoReservabarcoId": number;
   constructor(data?: ReservaBarcoInterface) {
     Object.assign(this, data);
   }
@@ -95,8 +95,8 @@ export class ReservaBarco implements ReservaBarcoInterface {
           name: 'usuarioSolicitanteId',
           type: 'number'
         },
-        "planoreservabarcoId": {
-          name: 'planoreservabarcoId',
+        "planoReservabarcoId": {
+          name: 'planoReservabarcoId',
           type: 'number'
         },
       },

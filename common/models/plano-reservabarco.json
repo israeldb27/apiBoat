@@ -43,7 +43,12 @@
     "reservaBarcos": {
       "type": "hasMany",
       "model": "ReservaBarco",
-      "foreignKey": "planoreservabarcoId"
+      "foreignKey": ""
+    },
+    "barco": {
+      "type": "hasOne",
+      "model": "Barco",
+      "foreignKey": ""
     }
   },
   "acls": [],

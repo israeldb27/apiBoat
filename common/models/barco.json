@@ -59,13 +59,13 @@
     "idDonoBarco": {
       "type": "number"
     },
+    "tipoBarco": {
+      "type": "string"
+    },
     "disponivel": {
       "type": "string",
       "required": true
-    },
-    "tipoBarco": {
-      "type": "string"
-    }
+    }    
   },
   "validations": [],
   "relations": {
@@ -74,7 +74,7 @@
       "model": "Avaliacaobarco",
       "foreignKey": ""
     },
-    "opcionais": {
+    "opcionais": {  
       "type": "hasMany",
       "model": "Opcional",
       "foreignKey": ""
@@ -82,7 +82,7 @@
     "reservaBarcos": {
       "type": "hasMany",
       "model": "ReservaBarco",
-      "foreignKey": "barcoId"
+      "foreignKey": ""
     }
   },
   "acls": [],
